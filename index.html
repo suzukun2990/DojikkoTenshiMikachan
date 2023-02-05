@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | DojikkoTenshiMikachan</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <canvas id="unity-canvas"></canvas>
+    <script src="Build/DojikkoTenshiMikachan.loader.js"></script>
+    <script>
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/DojikkoTenshiMikachan.data",
+        frameworkUrl: "Build/DojikkoTenshiMikachan.framework.js",
+        codeUrl: "Build/DojikkoTenshiMikachan.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "DojikkoTenshiMikachan",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
